@@ -63,16 +63,16 @@ function PrintWork(messages, multipart) {
 
 // Bind a function to know when work/data/messages are received
 sub_1.OnData(function(messages, multipart) {
-	print("worker 1 -- received work");
+	print("- worker 1 -- received work");
 	PrintWork(messages, multipart);
 });
 
 sub_2.OnData(function(messages, multipart) {
-	print("worker 2 -- received work");
+	print("- worker 2 -- received work");
 	PrintWork(messages, multipart);
 });
 
 sub_3.OnData(function(messages, multipart) {
-	print("worker 3 -- received work");
+	print("- worker 3 -- received work");
 	PrintWork(messages, multipart);
 });
